@@ -1,0 +1,22 @@
+.DS_Store
+Thumbs.db
+Icon?
+
+# Fichiers Microsoft Office temporaires
+~$*.xlsm
+~$*.xlsx
+
+# Archives redondantes avec les dossiers FP1/ déjà présents
+*.zip
+
+# PDF de référence Fujifilm (copyright tiers, non redistribuable)
+Fujifilm_Customs_Films_for_XT1.pdf
+
+# Environnements / secrets (par défaut)
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConversionProfile application="XRFC" version="1.9.0.5">
+    <PropertyGroup device="X-T3" version="X-T3_0100" label="Kodak Portra 400">
+        <SerialNumber>59353437373218082792F320810B0D</SerialNumber>
+        <TetherRAWConditonCode>X-T3_0100</TetherRAWConditonCode>
+        <Editable>TRUE</Editable>
+        <SourceFileName/>
+        <Fileerror>NONE</Fileerror>
+        <RotationAngle>0</RotationAngle>
+        <StructVer>65536</StructVer>
+        <IOPCode>FA159501</IOPCode>
+        <ShootingCondition>OFF</ShootingCondition>
+        <FileType>JPG</FileType>
+        <ImageSize>L3x2</ImageSize>
+        <ImageQuality>Fine</ImageQuality>
+        <ExposureBias>P0P67</ExposureBias>
+        <DynamicRange>100</DynamicRange>
+        <WideDRange>0</WideDRange>
+        <FilmSimulation>Classic</FilmSimulation>
+        <BlackImageTone>0</BlackImageTone>
+        <MonochromaticColor_RG>0</MonochromaticColor_RG>
+        <GrainEffect>STRONG</GrainEffect>
+        <GrainEffectSize>SMALL</GrainEffectSize>
+        <ChromeEffect>OFF</ChromeEffect>
+        <ColorChromeBlue/>
+        <SmoothSkinEffect/>
+        <WBShootCond>OFF</WBShootCond>
+        <WhiteBalance>Daylight</WhiteBalance>
+        <WBShiftR>4</WBShiftR>
+        <WBShiftB>-5</WBShiftB>
+        <WBColorTemp>6300K</WBColorTemp>
+        <HighlightTone>-1</HighlightTone>
+        <ShadowTone>-1</ShadowTone>
+        <Color>2</Color>
+        <Sharpness>-2</Sharpness>
+        <NoisReduction>-4</NoisReduction>
+        <Clarity>0</Clarity>
+        <LensModulationOpt>ON</LensModulationOpt>
+        <ColorSpace>AdobeRGB</ColorSpace>
+        <HDR/>
+    </PropertyGroup>
+</ConversionProfile>
