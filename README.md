@@ -236,9 +236,11 @@ Pour ajouter **vos propres presets**, utiliser `Prénom_Nom - Nom du preset.FP1`
 
 ## Licence
 
-Ce projet (macro VBA, README, structure du tableur) est distribué sous **licence MIT** — cf [`LICENSE`](./LICENSE).
+Ce projet est distribué sous **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** — cf [`LICENSE`](./LICENSE).
 
-Les **recettes de presets** (valeurs de paramètres) sont des réglages publiés par leurs auteurs respectifs (voir § Contribuer pour l'attribution par préfixe). Elles ont été compilées depuis des sources publiques (FujiXWeekly, blogs, Discord francophone Team Fuji). Si vous êtes l'auteur d'un preset et souhaitez un retrait ou une correction d'attribution, ouvrir une issue.
+**En clair** : vous pouvez utiliser, partager, modifier et redistribuer les presets et le générateur **librement pour un usage non commercial**, à condition de **créditer les auteurs** (attribution par préfixe, cf. § Contribuer). Tout usage commercial (revente du pack, intégration dans un produit payant, etc.) est **interdit** sans accord explicite.
+
+Les **recettes de presets** (valeurs de paramètres) sont des réglages publiés par leurs auteurs respectifs (voir § Contribuer). Elles ont été compilées depuis des sources publiques (FujiXWeekly, blogs, Discord francophone Team Fuji). Si vous êtes l'auteur d'un preset et souhaitez un retrait ou une correction d'attribution, ouvrir une issue.
 
 ## Disclaimer
 
