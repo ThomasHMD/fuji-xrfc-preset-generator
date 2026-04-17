@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConversionProfile application="XRFC" version="1.9.0.5">
+    <PropertyGroup device="X-E3" version="X-E3_0100" label="BT Velvia Travel">
+        <SerialNumber>59353437373218082792F320810B0D</SerialNumber>
+        <TetherRAWConditonCode>X-E3_0100</TetherRAWConditonCode>
+        <Editable>TRUE</Editable>
+        <SourceFileName/>
+        <Fileerror>NONE</Fileerror>
+        <RotationAngle>0</RotationAngle>
+        <StructVer>65536</StructVer>
+        <IOPCode>FA159501</IOPCode>
+        <ShootingCondition>OFF</ShootingCondition>
+        <FileType>JPG</FileType>
+        <ImageSize>L3x2</ImageSize>
+        <ImageQuality>Fine</ImageQuality>
+        <ExposureBias>0</ExposureBias>
+        <DynamicRange>100</DynamicRange>
+        <WideDRange>0</WideDRange>
+        <FilmSimulation>Velvia</FilmSimulation>
+        <BlackImageTone>0</BlackImageTone>
+        <MonochromaticColor_RG>0</MonochromaticColor_RG>
+        <GrainEffect>OFF</GrainEffect>
+        <GrainEffectSize>SMALL</GrainEffectSize>
+        <ChromeEffect>OFF</ChromeEffect>
+        <ColorChromeBlue/>
+        <SmoothSkinEffect/>
+        <WBShootCond>OFF</WBShootCond>
+        <WhiteBalance>Auto</WhiteBalance>
+        <WBShiftR>0</WBShiftR>
+        <WBShiftB>0</WBShiftB>
+        <WBColorTemp>5900K</WBColorTemp>
+        <HighlightTone>0</HighlightTone>
+        <ShadowTone>3</ShadowTone>
+        <Color>1</Color>
+        <Sharpness>1</Sharpness>
+        <NoisReduction>-2</NoisReduction>
+        <Clarity>0</Clarity>
+        <LensModulationOpt>ON</LensModulationOpt>
+        <ColorSpace>AdobeRGB</ColorSpace>
+        <HDR/>
+    </PropertyGroup>
+</ConversionProfile>

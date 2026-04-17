@@ -1,0 +1,6 @@
+Hello, 
+
+Vous pouvez déposer vos fichiers FP1 ici :
+
+- Mettez-les dans le dossier correspondant à votre appareil. S'il n'existe pas, créez le.
+- Renommer votre preset "Votre nom - Nom du preset" si vous voulez qu'on sâche qui a fait quoi.

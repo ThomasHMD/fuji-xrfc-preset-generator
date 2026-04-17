@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConversionProfile application="XRFC" version="1.12.0.0">
+	<!-- Le label ci-dessous c'est à remplir par le nom de la ligne, c'est le nom du preset. A prendre dnas le champ "Label" -->
+	<PropertyGroup device="X-T4" version="X-T4_0100" label="Classic neg">
+		<SerialNumber>593536303034201113C58330314721</SerialNumber>
+		<TetherRAWConditonCode>X-T4_0100</TetherRAWConditonCode>
+		<Editable>TRUE</Editable>
+		<SourceFileName/>
+		<Fileerror>NONE</Fileerror>
+		<RotationAngle>0</RotationAngle>
+		<StructVer>65536</StructVer>
+		<IOPCode>FF159505</IOPCode>
+		<ShootingCondition>OFF</ShootingCondition>
+		<FileType>JPG</FileType>
+		<ImageSize>L3x2</ImageSize>
+		<ImageQuality>Fine</ImageQuality>
+		<!-- On ne touche pas à tout ce qui est avant ça, c'est des paramètres par défaut disons -->
+		<!-- PRendre la valeur du champ éponyme, ExposureBias -->
+		<ExposureBias>0</ExposureBias>
+		<!-- PRendre la valeur du champ éponyme, DynamicRange -->
+		<DynamicRange>100</DynamicRange>
+		<WideDRange>0</WideDRange>
+		<!-- PRendre la valeur du champ éponyme, FilmSimulation -->
+		<FilmSimulation>ClassicNEGA</FilmSimulation>
+		<BlackImageTone>0</BlackImageTone>
+		<MonochromaticColor_RG>0</MonochromaticColor_RG>
+		<!-- 		Ces 2 paramètres sont affectés par la valeur de grain. 
+		OFF : OFF / SMALL
+		WEAK : WEAK / SMALL
+		Strong : STRONG / SMALL
+		Strong L : STRONG / LARGE -->
+		<GrainEffect>WEAK</GrainEffect>
+		<GrainEffectSize>SMALL</GrainEffectSize>
+		<!-- Idem pour les 2 valeurs ci-dessous, elles sont à remplir avec le champ CCFx/CCFxB. 
+		La valeur avant le "/" va dans le premier champ (ChromeEffect) et la deuxième dans ColorChromeBlue. Si c'est OFF, c'est OFF dans les 2 comme ci-dessous -->
+		<ChromeEffect>OFF</ChromeEffect>
+		<ColorChromeBlue>OFF</ColorChromeBlue>
+		<SmoothSkinEffect>OFF</SmoothSkinEffect>
+		<WBShootCond>OFF</WBShootCond>
+		<!-- PRendre la valeur du champ éponyme, WhiteBalance -->
+		<WhiteBalance>Auto</WhiteBalance>
+		<!-- Pour les 2 ci dessous prendre les valeurs de WBShiftR et WBShiftB -->
+		<WBShiftR>0</WBShiftR>
+		<WBShiftB>0</WBShiftB>
+		<WBColorTemp>10000K</WBColorTemp>
+		<!-- Pour les 5 suivants (highlight, shadown, color, sharpness et noisred, prendre la valeur) -->
+		<HighlightTone>1</HighlightTone>
+		<ShadowTone>1</ShadowTone>
+		<Color>0</Color>
+		<Sharpness>0</Sharpness>
+		<NoisReduction>0</NoisReduction>
+		<Clarity>0</Clarity>
+		<LensModulationOpt>ON</LensModulationOpt>
+		<ColorSpace>sRGB</ColorSpace>
+		<HDR/>
+		<DigitalTeleConv/>
+	</PropertyGroup>
+</ConversionProfile>

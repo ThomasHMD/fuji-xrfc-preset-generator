@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConversionProfile application="XRFC" version="1.9.0.5">
+    <PropertyGroup device="X-T2" version="X-T2_0100" label="RR Kodachrome 64">
+        <SerialNumber>593535373131191120AF1010112D41</SerialNumber>
+        <TetherRAWConditonCode>X-T2_0100</TetherRAWConditonCode>
+        <Editable>TRUE</Editable>
+        <SourceFileName/>
+        <Fileerror>NONE</Fileerror>
+        <RotationAngle>0</RotationAngle>
+        <StructVer>65536</StructVer>
+        <IOPCode>FA159501</IOPCode>
+        <ShootingCondition>OFF</ShootingCondition>
+        <FileType>JPG</FileType>
+        <ImageSize>L3x2</ImageSize>
+        <ImageQuality>Fine</ImageQuality>
+        <ExposureBias>P0P33</ExposureBias>
+        <DynamicRange>400</DynamicRange>
+        <WideDRange>0</WideDRange>
+        <FilmSimulation>Classic</FilmSimulation>
+        <BlackImageTone>0</BlackImageTone>
+        <MonochromaticColor_RG>0</MonochromaticColor_RG>
+        <GrainEffect>WEAK</GrainEffect>
+        <GrainEffectSize>SMALL</GrainEffectSize>
+        <ChromeEffect>WEAK</ChromeEffect>
+        <ColorChromeBlue>OFF</ColorChromeBlue>
+        <SmoothSkinEffect>OFF</SmoothSkinEffect>
+        <WBShootCond>OFF</WBShootCond>
+        <WhiteBalance>Daylight</WhiteBalance>
+        <WBShiftR>2</WBShiftR>
+        <WBShiftB>-5</WBShiftB>
+        <WBColorTemp>2650K</WBColorTemp>
+        <HighlightTone>1</HighlightTone>
+        <ShadowTone>2</ShadowTone>
+        <Color>0</Color>
+        <Sharpness>2</Sharpness>
+        <NoisReduction>-4</NoisReduction>
+        <Clarity>0</Clarity>
+        <LensModulationOpt>ON</LensModulationOpt>
+        <ColorSpace>AdobeRGB</ColorSpace>
+        <HDR/>
+    </PropertyGroup>
+</ConversionProfile>
