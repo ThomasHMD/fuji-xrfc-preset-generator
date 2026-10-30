@@ -2,9 +2,9 @@
 // Copyright (c) 2026 Thomas Hammoudi
 // Écrire une recette Fujifilm (profil .FP1 de X RAW Studio) dans un emplacement C1 à C7 du X-T4 par USB (PTP, ImageCaptureCore).
 // Même transport que d750/outils/d750_ptp.swift : commandes PTP brutes par ImageCaptureCore, phase de données sortante sans
-// l'entête de 12 octets. Protocole, sources, ce qui reste à vérifier : voir le README du dépôt (La méthode en clair, Rejouer la mesure).
+// l'entête de 12 octets. Protocole, sources, ce qui reste à vérifier : voir docs/methode.md.
 //
-//   swiftc -O -swift-version 5 xt4/outils/xt4_recettes.swift -o <dossier hors du dépôt>/xt4_recettes
+//   swiftc -O -swift-version 5 outils/x-t4/xt4_recettes.swift -o <dossier hors du dépôt>/xt4_recettes
 //   xt4_recettes sonde                                         lecture seule : session, mode USB, la famille 0xD18C est-elle là ?
 //   xt4_recettes traduire <fichier.FP1 | dossier> [--court] [--emplacement N] [--dr-auto-zero]
 //                                                              sans boîtier : affiche les écritures PTP qui seraient faites
@@ -17,7 +17,7 @@
 //                                                              sélecteur 0xD18C est écrit, puis remis
 //   xt4_recettes autotest                                      sans boîtier : contrôle des encodages sur des vecteurs connus
 //
-// Garde-fous (voir aussi le README du dépôt) :
+// Garde-fous (voir aussi docs/ecrire-dans-c1-c7.md) :
 //  - sonde et sauvegarder ne PEUVENT PAS écrire : la fonction ptp() refuse tout code d'opération hors lecture (liste blanche) ;
 //  - l'écriture (SetDevicePropValue 0x1016) n'est ouverte que par ecrire --vraiment, et seulement sur 0xD18C, 0xD18D et
 //    0xD190 à 0xD1A4 : jamais 0xD1A5 (état de prise de vue courant), jamais 0xD18E/0xD18F (taille et qualité d'image : les
@@ -31,7 +31,7 @@
 //
 // Statut : essayé sur un X-T4 (firmware 2.12) le 29/10/2026 : C7 écrit, relu, retrouvé dans la sauvegarde après extinction,
 // puis remis. Ce qui est encodé vient de FilmKit, de fujifilm-ptp-recipes, de fujifilm-ptp-reference (zgrimz) et d'essais
-// sur le boîtier ; chaque point incertain porte l'étiquette « hypothèse » (voir le README du dépôt, La méthode en clair).
+// sur le boîtier ; chaque point incertain porte l'étiquette « hypothèse » (voir docs/methode.md).
 import Foundation
 import ImageCaptureCore
 import CryptoKit
@@ -684,8 +684,8 @@ func commandeSonde() -> Never {
     if c.famillePresente && c.ecritureAnnoncee {
         note(c.modeUSB == 6 && c.modeleOK ? "FAMILLE 0xD18C PRÉSENTE ET MODIFIABLE : « ecrire » est possible (une recette, sauvegarde faite avant)."
                                           : "Famille 0xD18C présente et modifiable, mais les autres prérequis ne sont pas réunis (voir plus haut).")
-    } else if c.famillePresente { note("Famille 0xD18C présente mais en lecture seule : ne pas écrire, voir le README du dépôt.") }
-    else if c.famille0x200A { note("FAMILLE 0xD18C ABSENTE (0x200A) : « ecrire » refusera. Vérifier le mode USB ; sinon plan B = fichier de sauvegarde (disposition du X-T4 non publiée, voir le README du dépôt).") }
+    } else if c.famillePresente { note("Famille 0xD18C présente mais en lecture seule : ne pas écrire, voir docs/ecrire-dans-c1-c7.md.") }
+    else if c.famille0x200A { note("FAMILLE 0xD18C ABSENTE (0x200A) : « ecrire » refusera. Vérifier le mode USB ; sinon plan B = fichier de sauvegarde (disposition du X-T4 non publiée, voir docs/ecrire-dans-c1-c7.md).") }
     else { note("Verdict impossible : le boîtier n'a pas répondu à la question sur 0xD18C.") }
     ecrireJournal(dossierSortie())
     b.fermer()

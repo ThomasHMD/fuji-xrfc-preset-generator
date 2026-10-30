@@ -210,7 +210,7 @@ Le réglage Couleur **multiplie la saturation**, à peu près de 5 % par cran, s
 
 - La balance change la teinte de toute l'image (b\* de −42 à +25), presque pas sa clarté (±1 L\*).
 - Sur cette vue, 7 500 K tombe presque neutre et 5 500 K reste un peu plus froid que l'Auto. Lumière du jour se place près de 5 500 K, Incandescent entre 2 500 et 4 000 K.
-- **Les recettes TH n'utilisent pas de Kelvin.** En noir et blanc (Tri-X, HP5, FP4, de 3 200 à 6 500 K, choisi sur une moitié des photos, noté sur l'autre), aucun Kelvin ne gagne 0,3 : elles restent en Auto, avec des décalages R / B.
+- **Les recettes mesurées n'utilisent pas de Kelvin.** En noir et blanc (Tri-X, HP5, FP4, de 3 200 à 6 500 K, choisi sur une moitié des photos, noté sur l'autre), aucun Kelvin ne gagne 0,3 : elles restent en Auto, avec des décalages R / B.
 
 ## 8. Le noir et blanc : Acros, Monochrome, filtres, virage
 
@@ -248,7 +248,7 @@ Sans filtre, le X-T4 rend donc **les rouges plus sombres et les bleus plus clair
 
 - Chaque cran de chaud / froid vaut environ 1,5 de b\* ; chaque cran de magenta / vert environ 1,4 de a\*, vers le vert quand on monte.
 - Chaque virage tire aussi un peu sur l'autre axe (chaud / froid : a\* de −2,4 à +3,8 ; magenta / vert : b\* de −6,0 à +6,1).
-- La clarté ne bouge pas (moins de 0,4 L\*). Aucune recette TH n'utilise le virage.
+- La clarté ne bouge pas (moins de 0,4 L\*). Aucune recette mesurée n'utilise le virage.
 
 ![Virage monochrome](figures/traitement-couleur/virage-florence.jpg)
 
@@ -273,7 +273,7 @@ Sur un RAF pris en DR400, développé en DR100, les hautes lumières montent de 
 
 Sur ces mêmes RAF, contre leur DR de prise de vue, la **priorité D-Range** faible relève les ombres (L\* 0 à 30) de +3,7 à +8,3 et baisse les hautes lumières (75 à 90) de 5,7 à 9,3 ; la forte relève les ombres de +16 à +22, baisse les hautes lumières de 3,3 à 7,5, et les noirs (L\* < 5) disparaissent presque (0 à 1,4 % des zones, contre 0 à 22,5 %).
 
-**Les recettes TH restent en DR100.** La règle était fixée avant la mesure : DR200 ou DR400 seulement avec un gain moyen d'au moins 0,3, sur 2 scènes sur 3, prises au trépied à DR100, 200 et 400. Aucune recette ne passe ; la Pro 400H gagne sur les deux scènes valables, mais de 0,12 seulement.
+**Les recettes mesurées restent en DR100.** La règle était fixée avant la mesure : DR200 ou DR400 seulement avec un gain moyen d'au moins 0,3, sur 2 scènes sur 3, prises au trépied à DR100, 200 et 400. Aucune recette ne passe ; la Pro 400H gagne sur les deux scènes valables, mais de 0,12 seulement.
 
 Même test, même règle pour les recettes de 2022 retenues dans les emplacements C1 à C7 : `DC Classic Chrome II`, `NZD Ektar 100` et `RR Acros Push Process`. Aucune ne passe. `RR Acros Push Process` et `NZD Ektar 100`, d'origine en DR200 et DR Auto, y passent donc en DR100. La DR Auto ne se mesure pas ici, faute de vues prises dans ce mode ; même si le boîtier prenait toujours la meilleure DR de chaque scène, le gain resterait sous 0,3 (+0,17 à +0,19, calcul).
 
@@ -322,4 +322,4 @@ Même test, même règle pour les recettes de 2022 retenues dans les emplacement
 
 ---
 
-*Mesures et figures : Thomas Hammoudi, octobre 2026, X-T4 au firmware 2.12. Les outils qui font les mesures et les figures sont dans ce dépôt, [`xt4/outils/`](../xt4/outils/) (`xt4_effets.py`, `xt4_illustrations.py`). Licence CC BY-NC 4.0.*
+*Mesures et figures : Thomas Hammoudi, octobre 2026, X-T4 au firmware 2.12. Les outils qui font les mesures et les figures sont dans ce dépôt, [`outils/x-t4/`](../outils/x-t4/) (`xt4_effets.py`, `xt4_illustrations.py`). Licence CC BY-NC 4.0.*

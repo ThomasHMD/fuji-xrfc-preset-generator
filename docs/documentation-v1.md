@@ -77,7 +77,7 @@ Le même chemin, en dessin :
 
 ## Procédure pour les autres appareils
 
-Depuis 2026, cette procédure ne sert plus pour les boîtiers courants : tous les fichiers sont déjà convertis dans [la dernière version du dépôt](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest), fichier `presets-fp1-autres-boitiers.zip`. Elle reste utile pour un boîtier qui n'y figure pas.
+Depuis 2026, cette procédure ne sert plus pour les boîtiers courants : tous les fichiers sont déjà convertis dans [la dernière version du dépôt](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest), fichier le pack lite ou complet. Elle reste utile pour un boîtier qui n'y figure pas.
 
 La vidéo présente un résultat fonctionnel pour le X-T4. **Les fichiers ne sont pas directement exploitables sur les autres appareils** : il faut de petites corrections pour que ça marche chez vous.
 
@@ -216,7 +216,7 @@ Il a [mis ses fichiers FP1 en ligne](https://www.dropbox.com/sh/dj91iz5bzq5akt4/
 
 ## Pour le X-T5
 
-Les fichiers pour le X-T5 sont dans `presets-fp1-autres-boitiers.zip`, sur [la dernière version du dépôt](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest). Un utilisateur avait aussi réalisé une intégration pour le X-T5 : sa documentation est restée sur [l'ancienne page Notion](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec).
+Les fichiers pour le X-T5 sont dans le pack lite ou complet, sur [la dernière version du dépôt](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest). Un utilisateur avait aussi réalisé une intégration pour le X-T5 : sa documentation est restée sur [l'ancienne page Notion](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec).
 
 ## Contribuer
 

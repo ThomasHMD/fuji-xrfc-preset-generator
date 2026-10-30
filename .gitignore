@@ -21,7 +21,7 @@ Fujifilm_Customs_Films_for_XT1.pdf
 .idea/
 .vscode/
 
-# ---------- xt4/ (2026)
+# ---------- outils/x-t4/ (2026)
 # Python
 __pycache__/
 *.pyc
@@ -29,8 +29,8 @@ __pycache__/
 venv/
 
 # binaires compilés des outils Swift (à compiler hors du dépôt)
-xt4/outils/xt4_recettes
-xt4/outils/xt4_banc
+outils/x-t4/xt4_recettes
+outils/x-t4/xt4_banc
 *.dSYM/
 
 # sauvegardes du boîtier (numéro de série en clair), profils de conversion, journaux de l'outil
@@ -50,6 +50,7 @@ journal.txt
 *.tiff
 # sauf les figures de la doc, en version web et sans métadonnées
 !docs/figures/traitement-couleur/*.jpg
+!docs/figures/*.jpg
 
 # tables et profils tiers (spektrafilm, LUT Fujifilm, profils Lightroom ou Adobe)
 *.npz
@@ -58,6 +59,9 @@ journal.txt
 *.dcp
 
 # dossiers de travail de la chaîne de mesure
-xt4/recherche/
+outils/recherche/
 xt4-mesure/
 cache/
+
+# dossier créé par la macro du tableur
+tableur/FP1/

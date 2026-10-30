@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 # Copyright (c) 2026 Thomas Hammoudi
 """Scène XYZ (D65) estimée depuis un RAF du X-T4 : remplace la seule ColorMatrix D65 de xt4_mesure.lineaire.
-Voir le README du dépôt (La méthode en clair, Rejouer la mesure).
+Voir docs/methode.md.
 
 Toutes les méthodes prennent le RVB caméra équilibré (balance de la vue, vert = 1) et rendent un XYZ adapté à D65
 (Bradford), un neutre allant sur le blanc D65 :
@@ -14,7 +14,7 @@ Toutes les méthodes prennent le RVB caméra équilibré (balance de la vue, ver
   mire          (d) matrice 3 × 3 ajustée sur les mires VFA d'Imaging Resource (ColorChecker 24 + SG 140) du X-T3 et du
                     X-T30, même capteur X-Trans IV : Adobe donne aux trois boîtiers un profil identique au bit près.
 Méthode retenue : 'mire' (METHODE). Contre la mire de l'autre boîtier, ΔE2000 médian 1,4 à 1,5 et p90 3,7 à 3,8 au lieu
-de 2,5 et 6,6 à 6,8 pour cm-d65 (plages L* ≥ 20) ; détail et limites (LED, lumière chaude) : voir le README du dépôt (La méthode en clair, Rejouer la mesure).
+de 2,5 et 6,6 à 6,8 pour cm-d65 (plages L* ≥ 20) ; détail et limites (LED, lumière chaude) : voir docs/methode.md.
 lineaire(raf) a la même interface et les mêmes sorties que xt4_mesure.lineaire : un `from xt4_scene import lineaire`
 suffit (ou `xt4_mesure.lineaire = xt4_scene.lineaire`). L'échelle d'exposition (etalonnage.json) reste valable (+0,001 IL).
 Les blocs déjà préparés (CHANTIER/blocs/*.npz) se convertissent sans relire les RAF : convertir_blocs(d).
@@ -48,7 +48,7 @@ sys.path.insert(0, str(RACINE / 'd750' / 'outils'))
 if not (RACINE / 'd750' / 'outils' / 'd750_modele.py').is_file() and not os.environ.get('XT4_RIB_AVERTI'):
     os.environ['XT4_RIB_AVERTI'] = '1'
     print(f"xt4 : modules du D750 introuvables dans {RACINE / 'd750' / 'outils'} ; XT4_RIB doit pointer vers un clone de "
-          'https://github.com/ThomasHMD/retro-ingenierie-boitiers (voir le README du dépôt, Rejouer la mesure).', file=sys.stderr)
+          'https://github.com/ThomasHMD/retro-ingenierie-boitiers (voir docs/methode.md).', file=sys.stderr)
 CHANTIER = pathlib.Path(os.environ.get('XT4_CHANTIER') or pathlib.Path(tempfile.gettempdir()) / 'xt4-mesure')
 DONNEES = ICI.parent / 'recherche' / 'donnees'
 MIRES = DONNEES / 'xt4-mire-ir-xtrans4.json'
