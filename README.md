@@ -292,7 +292,7 @@ Fujifilm X RAW Studio n'a aucune fonction d'**import en masse** : chaque profil 
 3. les **déposer dans XRFC** pour développer les RAF avec un choix massif de rendus,
 4. depuis 2026, sur un X-T4 et un Mac, les **écrire directement dans C1 à C7** en ligne de commande, et utiliser des recettes **mesurées** plutôt que réglées à l'œil.
 
-Historique : projet démarré en janvier 2022, [documenté publiquement sur Notion](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec), avec une communauté d'échange de `.FP1` par boîtier sur Discord.
+Historique : projet démarré en janvier 2022, [documenté publiquement](docs/documentation-v1.md), avec une communauté d'échange de `.FP1` par boîtier sur Discord.
 
 ## Arborescence
 
@@ -512,10 +512,10 @@ Si la valeur de la colonne `WhiteBalance` se termine par `K`, V1.1 la bascule au
 * **Exposer les champs figés** (Clarity, ColorSpace, BlackImageTone…) pour couvrir les presets B&W virés et les presets AdobeRGB.
 * **Validateur `.FP1`** : pour le X-T4, `xt4_recettes traduire` et `autotest` en tiennent lieu ; un validateur pour tous les boîtiers (JSON Schema, Pydantic) reste à faire.
 * **UI web** (Streamlit / SvelteKit) pour saisir un preset via formulaire avec preview.
-* **Support X-T5 et boîtiers récents** : voir la [section X-T5 de la doc Notion](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec) pour un début d'intégration communautaire.
+* **Support X-T5 et boîtiers récents** : voir la [section X-T5 de la doc de la v1](docs/documentation-v1.md#pour-le-x-t5) pour un début d'intégration communautaire.
 * **Simulations hors X RAW Studio** : [abpy/FujifilmCameraProfiles](https://github.com/abpy/FujifilmCameraProfiles) publie les simulations Fuji en profils `.dcp` et LUT `.cube` pour Lightroom / Camera Raw. Base possible pour décliner les recettes du tableur en presets Lightroom, sans boîtier branché.
 
-Un membre du Discord a aussi publié [`FujiSimuRecipesGen`](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec#FujiSimuRecipesGen), un générateur en Go (MIT).
+Un membre du Discord a aussi publié [`FujiSimuRecipesGen`](https://github.com/mmoqui/FujiSimuRecipesGen), un générateur en Go (MIT).
 
 Contributions bienvenues : ouvrir une issue ou une PR.
 
@@ -554,7 +554,7 @@ Pour ajouter **vos propres presets**, utiliser `Prénom_Nom - Nom du preset.FP1`
 
 * 🎥 **Vidéo YouTube** - [160+ presets directement dans votre Fujifilm !](https://www.youtube.com/watch?v=j8YM1vs0g2Y) (Thomas Hammoudi, janvier 2022 ; la voie X RAW Studio)
 * 📄 **Page du Blog** - [thomashammoudi.com/presets-fujifilm/](https://thomashammoudi.com/presets-fujifilm/) (avec la section « Mise à jour 2026 »)
-* 📘 **Documentation Notion** - [Documentation preset Fujifilm](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec)
+* 📘 **Documentation de la v1** - [docs/documentation-v1.md](docs/documentation-v1.md) (import, conversion à la main, chemins de X RAW Studio)
 * 📚 **FujiXWeekly** - [fujixweekly.com](https://fujixweekly.com/) - source de la plupart des presets `RR …`
 * 📚 **Henri-Pierre Chavaz** - [hpchavaz-photography.blogspot.com/p/fujifims.html](https://hpchavaz-photography.blogspot.com/p/fujifims.html) - compilation par boîtier
 * 🔧 **Rétro-ingénierie de boîtiers** - [ThomasHMD/retro-ingenierie-boitiers](https://github.com/ThomasHMD/retro-ingenierie-boitiers) - la même méthode de mesure sur des Nikon et un Pentax ; les outils du X-T4 s'appuient sur ses modules du D750
