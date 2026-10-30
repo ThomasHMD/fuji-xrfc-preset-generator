@@ -410,13 +410,16 @@ Voir [§ Écrire une recette dans C1 à C7](#écrire-une-recette-dans-c1-à-c7-m
 
 ## Adapter à un autre boîtier
 
-Les `.FP1` fournis sont générés pour **X-T4**. Pour un autre modèle, modifier trois attributs dans la macro (lignes `"        <PropertyGroup device="…"`  et `TetherRAWConditonCode`) :
+Tout est déjà décliné : [**presets-fp1-autres-boitiers.zip**](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest/download/presets-fp1-autres-boitiers.zip) contient les 182 `.FP1` pour X-T2, X-T3, X-T20, X-T30, X-T5, X-H1, X-S10, X-E3, X-Pro2, X-Pro3, X100F, X100V, GFX 50R, GFX 50S et GFX 100. Je n'ai testé que le X-T4.
+
+Les `.FP1` du dossier principal sont générés pour **X-T4**. Pour un autre modèle, modifier trois attributs dans la macro (lignes `"        <PropertyGroup device="…"`  et `TetherRAWConditonCode`) :
 
 | Boîtier | `device=` | `TetherRAWConditonCode` |
 |---|---|---|
 | X-T2 | `X-T2` | `X-T2_0100` |
 | X-T3 | `X-T3` | `X-T3_0100` |
 | X-T4 | `X-T4` | `X-T4_0100` |
+| X-T5 | `X-T5` | `X-T5_0200` |
 | X-T20 | `X-T20` | `X-T20_0100` |
 | X-T30 | `X-T30` | `X-T30_0100` |
 | X-H1 | `X-H1` | `X-H1_0100` |
