@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 # Copyright (c) 2026 Thomas Hammoudi
 """Recettes JPEG du X-T4 mesurées contre des cibles de film (Tri-X 400, HP5 Plus, FP4 Plus, Portra 400), le boîtier
-développant lui-même les RAF par USB (xt4_banc.swift). Voir le README du dépôt (La méthode en clair, Rejouer la mesure).
+développant lui-même les RAF par USB (xt4_banc.swift). Voir docs/methode.md.
 
 Chaîne de mesure, pour chaque RAF :
 1. RAW linéaire (rawpy / LibRaw, demi-résolution 3123 × 2085, noir soustrait, balance des blancs de la prise de vue) ;
@@ -22,7 +22,7 @@ Chaîne de mesure, pour chaque RAF :
 
   xt4_mesure.py preparer                 RAW linéaires, géométrie, blocs (un rendu de référence par RAF sur le boîtier)
   xt4_mesure.py etalonner                échelle d'exposition (gris de 18 %) d'après le Provia neutre
-  xt4_mesure.py existantes               mesure des .FP1 de 2022 (V1.1/FP1)
+  xt4_mesure.py existantes               mesure des .FP1 de 2022 (presets/recettes-2022)
   xt4_mesure.py chercher <film> [...]    recherche grossière puis fine (le boîtier rend chaque candidat)
   xt4_mesure.py grain                    bruit ajouté par chaque réglage de grain (choix du grain, à part)
   xt4_mesure.py --self-test              contrôles sans boîtier
@@ -51,11 +51,11 @@ sys.path.insert(0, str(RACINE / 'd750' / 'outils'))
 if not (RACINE / 'd750' / 'outils' / 'd750_modele.py').is_file() and not os.environ.get('XT4_RIB_AVERTI'):
     os.environ['XT4_RIB_AVERTI'] = '1'
     print(f"xt4 : modules du D750 introuvables dans {RACINE / 'd750' / 'outils'} ; XT4_RIB doit pointer vers un clone de "
-          'https://github.com/ThomasHMD/retro-ingenierie-boitiers (voir le README du dépôt, Rejouer la mesure).', file=sys.stderr)
+          'https://github.com/ThomasHMD/retro-ingenierie-boitiers (voir docs/methode.md).', file=sys.stderr)
 CHANTIER = pathlib.Path(os.environ.get('XT4_CHANTIER') or pathlib.Path(tempfile.gettempdir()) / 'xt4-mesure')
 BANC = os.environ.get('XT4_BANC', '')
-PRESETS = ICI.parent.parent / 'V1.1' / 'FP1'          # racine du dépôt fuji-xrfc-preset-generator
-RECETTES = ICI.parent / 'recettes'
+PRESETS = ICI.parent.parent / 'presets' / 'recettes-2022'          # racine du dépôt fuji-xrfc-preset-generator
+RECETTES = ICI.parent.parent / 'presets' / 'recettes-2026'
 FIGURES = ICI.parent / 'recherche' / 'figures'
 DONNEES = ICI.parent / 'recherche' / 'donnees'
 
@@ -132,7 +132,7 @@ def cle(rec):
 
 
 # ---------------------------------------------------------------------------------------------------------------
-# 2. .FP1 (format X RAW Studio, comme les presets de V1.1/FP1) : lecture et écriture
+# 2. .FP1 (format X RAW Studio, comme les presets de presets/recettes-2022) : lecture et écriture
 # ---------------------------------------------------------------------------------------------------------------
 def lire_fp1(chemin):
     import re
@@ -1264,7 +1264,7 @@ def tableaux():
 # 11. Livraison des .FP1, contrôles, ligne de commande
 # ---------------------------------------------------------------------------------------------------------------
 def livrer():
-    """Écrit un .FP1 par film dans xt4/recettes/ (recette mesurée + grain choisi à part, grain.json)."""
+    """Écrit un .FP1 par film dans presets/recettes-2026/ (recette mesurée + grain choisi à part, grain.json)."""
     best = json.loads((CHANTIER / 'meilleures.json').read_text())
     choix = json.loads((CHANTIER / 'grain-choix.json').read_text())
     RECETTES.mkdir(parents=True, exist_ok=True)

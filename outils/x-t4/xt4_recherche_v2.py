@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 # Copyright (c) 2026 Thomas Hammoudi
 """Deuxième passe des recettes JPEG du X-T4 (29/10/2026), le boîtier développant lui-même les RAF (xt4_banc.swift).
-Voir le README du dépôt (La méthode en clair, Rejouer la mesure). Ce qui change depuis la première passe (xt4_mesure) :
+Voir docs/methode.md. Ce qui change depuis la première passe (xt4_mesure) :
 - scène : xt4_scene (matrice ajustée sur les mires du X-T3 et du X-T30), blocs convertis par xt4_scene.convertir_blocs
   (mêmes blocs, donc les rendus déjà gardés en cache restent valables) ;
 - cibles : xt4_cibles (celles du D750) : trix, hp5, fp4, portra, classic_chrome et ses trois variantes de goût ;
@@ -19,7 +19,7 @@ Voir le README du dépôt (La méthode en clair, Rejouer la mesure). Ce qui chan
   xt4_recherche_v2.py chercher couleur  Portra, Classic Chrome et ses trois variantes (15 recherches)
   xt4_recherche_v2.py bilan             notes sur A, B, 16, contrôle croisé, recettes de 2022 → donnees/
   xt4_recherche_v2.py grain             σ de L* ajouté par chaque grain, au cercle de 48 µm
-  xt4_recherche_v2.py livrer            .FP1 « TH … » dans xt4/recettes/
+  xt4_recherche_v2.py livrer            .FP1 « TH … » dans presets/recettes-2026/
   xt4_recherche_v2.py controle          les .FP1 livrés relus et rendus tels quels
   xt4_recherche_v2.py planches          cible, meilleure recette de 2022, nouvelle (colonnes nommées dans l'image)
   xt4_recherche_v2.py etat              où en est la recherche (sans le boîtier)
