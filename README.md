@@ -436,7 +436,7 @@ Les `.FP1` du dossier principal sont générés pour **X-T4**. Pour un autre mod
 
 Le **numéro de série** (`<SerialNumber>`) n'a **pas** besoin d'être changé : XRFC ne le contrôle pas lors du chargement (vérifié par la communauté).
 
-Certaines recettes utilisent des **simulations qui n'existent pas sur les anciens X-Trans** (`ClassicNEGA`, `Eterna`, `BleachBypass`, `AcrosR/G/Ye`, `ColorChromeBlue`, `ChromeEffect`). Le preset sera ignoré ou affichera une erreur *« preset non applicable »*. Voir la section [Différences par appareil sur la doc Notion](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec).
+Certaines recettes utilisent des **simulations qui n'existent pas sur les anciens X-Trans** (`ClassicNEGA`, `Eterna`, `BleachBypass`, `AcrosR/G/Ye`, `ColorChromeBlue`, `ChromeEffect`). Le preset sera ignoré ou affichera une erreur *« preset non applicable »*. Voir la section [Autres corrections de la doc de la v1](docs/documentation-v1.md#autres-corrections).
 
 Ce tableau vaut pour X RAW Studio. **L'écriture directe dans C1 à C7 (`xt4_recettes`) ne marche que sur le X-T4**, et les recettes TH n'ont été mesurées que sur lui.
 
