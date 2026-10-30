@@ -1,0 +1,10 @@
+# Chaîne de mesure du X-T4 (xt4_mesure.py, xt4_scene.py, xt4_cibles.py, xt4_recherche_v2.py, xt4_validation.py,
+# xt4_transfert.py, xt4_leviers.py). L'outil d'écriture C1-C7 (xt4_recettes.swift) et xt4_d185.py n'ont besoin de rien.
+numpy
+scipy
+pillow
+rawpy
+colour-science
+opencv-python-headless
+# hors pip : exiftool (brew install exiftool)
+# modules du D750 : dépôt ThomasHMD/retro-ingenierie-boitiers, dossier d750/outils (CC BY-NC-SA 4.0)
