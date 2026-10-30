@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 # Copyright (c) 2026 Thomas Hammoudi
 """Validation de la deuxième passe X-T4 (29/10/2026) : contrôle du banc, plage dynamique, lot varié hors échantillon.
-Voir le README du dépôt (La méthode en clair, Rejouer la mesure). Un seul banc à la fois : jamais en même temps que
+Voir docs/methode.md. Un seul banc à la fois : jamais en même temps que
 xt4_recherche_v2 (processus séparés, l'un après l'autre).
 
   xt4_validation.py preparer      liens des RAF de validation et de la séance du 29/10, référence et blocs (xt4_mesure.preparer)

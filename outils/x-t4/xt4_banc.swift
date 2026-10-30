@@ -5,7 +5,7 @@
 // reconvert), mais le RAF n'est envoyé qu'une fois : chaque rendu suivant ne coûte que l'envoi du profil 0xD185, le départ
 // 0xD183 et la lecture du JPEG (environ 1 s au lieu de 3).
 //
-//   swiftc -O -swift-version 5 xt4/outils/xt4_banc.swift -o <dossier hors du dépôt>/xt4_banc
+//   swiftc -O -swift-version 5 outils/x-t4/xt4_banc.swift -o <dossier hors du dépôt>/xt4_banc
 //   xt4_banc            puis des commandes sur l'entrée standard, une par ligne, champs séparés par une tabulation
 //                       (les chemins ont des espaces ; piloté par xt4_mesure.py) :
 //     charger <fichier.RAF> <profil-de-base.bin>    envoie le RAF, lit son profil 0xD185 et l'écrit dans le fichier donné

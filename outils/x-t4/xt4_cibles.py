@@ -3,7 +3,7 @@
 # Copyright (c) 2026 Thomas Hammoudi
 """Cibles de rendu des recettes JPEG du X-T4 (29/10/2026) : les mêmes que celles du D750 et du D40 (on repart des mêmes
 cibles qu'avant), des variantes de goût du Classic Chrome et de nouveaux films simulés par spektrafilm.
-Voir le README du dépôt (La méthode en clair, Rejouer la mesure).
+Voir docs/methode.md.
 
 Chaque cible est une fonction XYZ de la scène (D65, gris de 18 % = 0,18) → CIELAB D65 de l'image rendue (affichage
 sRGB). Échelle d'exposition : celle de xt4_mesure.scene (RAW × 0,18 / y18, y18 = valeur RAW que le Provia neutre du
@@ -28,7 +28,7 @@ boîtier rend à 118/255). Rien n'est recopié : les cibles viennent de d750_cib
 - ektar, pro400h : spektrafilm, négatif TIRÉ sur le papier conseillé par son profil (Ektar : Kodak Portra Endura ;
             Pro 400H : Fujifilm Crystal Archive II), filtres neutres de la base de spektrafilm (gris de 18 % neutre).
             spektrafilm n'inverse pas un négatif (son « scan du film » rend le négatif orangé) : le tirage est son seul
-            chemin positif, et le plus proche d'un tirage ou d'un scan de labo (voir le README du dépôt) ;
+            chemin positif, et le plus proche d'un tirage ou d'un scan de labo (voir docs/methode.md) ;
 - fp400h  : Pro 400H du preset acheté (profil Look du preset, RETENUE pour la Pro 400H, 29/10/2026 : l'auteur la préfère à
             spektrafilm, comme pour la Portra) : la table RVB de ce profil Look (lue dans son .xmp, hors du dépôt, rien
             recopié) posée sur la base d'Adobe ajustée aux paires NEF + export du D750 (matrice K et courbe de
@@ -76,7 +76,7 @@ RACINE = pathlib.Path(os.environ.get('XT4_RIB') or ICI.parent.parent)
 if not (RACINE / 'd750' / 'outils' / 'd750_modele.py').is_file() and not os.environ.get('XT4_RIB_AVERTI'):
     os.environ['XT4_RIB_AVERTI'] = '1'
     print(f"xt4 : modules du D750 introuvables dans {RACINE / 'd750' / 'outils'} ; XT4_RIB doit pointer vers un clone de "
-          'https://github.com/ThomasHMD/retro-ingenierie-boitiers (voir le README du dépôt, Rejouer la mesure).', file=sys.stderr)
+          'https://github.com/ThomasHMD/retro-ingenierie-boitiers (voir docs/methode.md).', file=sys.stderr)
 for _p in (ICI, RACINE / 'd750' / 'outils', RACINE / 'commun' / 'outils'):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
