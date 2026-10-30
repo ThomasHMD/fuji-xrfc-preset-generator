@@ -48,6 +48,8 @@ journal.txt
 *.jpeg
 *.tif
 *.tiff
+# sauf les figures de la doc, en version web et sans métadonnées
+!docs/figures/traitement-couleur/*.jpg
 
 # tables et profils tiers (spektrafilm, LUT Fujifilm, profils Lightroom ou Adobe)
 *.npz
