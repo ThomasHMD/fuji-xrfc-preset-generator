@@ -1,6 +1,6 @@
 # Licences et sources tierces
 
-Tout ce qui n'est pas listé ici est le travail de Thomas Hammoudi, sous [CC BY-NC 4.0](LICENSE) : les recettes, les tableurs, les textes, les figures et le code de `outils/x-t4/`.
+Tout ce qui n'est pas listé ici est le travail de Thomas Hammoudi, sous [CC BY-NC 4.0](LICENSE) : les recettes, les tableurs, les textes, les captures d'écran de la documentation et le code de `outils/x-t4/`. Les photos (planches et grille de `docs/figures/`, image d'aperçu) sont © Thomas Hammoudi, tous droits réservés, hors de cette licence.
 
 ## Repris dans le code de `outils/x-t4/`
 

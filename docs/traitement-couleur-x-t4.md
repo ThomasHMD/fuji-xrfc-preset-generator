@@ -322,4 +322,4 @@ Même test, même règle pour les recettes de 2022 retenues dans les emplacement
 
 ---
 
-*Mesures et figures : Thomas Hammoudi, octobre 2026, X-T4 au firmware 2.12. Les outils qui font les mesures et les figures sont dans ce dépôt, [`outils/x-t4/`](../outils/x-t4/) (`xt4_effets.py`, `xt4_illustrations.py`). Licence CC BY-NC 4.0.*
+*Mesures et figures : Thomas Hammoudi, octobre 2026, X-T4 au firmware 2.12. Les outils qui font les mesures et les figures sont dans ce dépôt, [`outils/x-t4/`](../outils/x-t4/) (`xt4_effets.py`, `xt4_illustrations.py`). Texte, mesures et outils : licence CC BY-NC 4.0. Les photos des figures : © Thomas Hammoudi, tous droits réservés.*
