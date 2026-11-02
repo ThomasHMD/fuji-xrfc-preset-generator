@@ -79,6 +79,8 @@ L'outil d'écriture et la chaîne de mesure s'appuient sur le travail de projets
 
 Tout le dépôt, recettes, tableurs, packs, textes, figures et code (`outils/x-t4/`), est sous **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**, cf. [`LICENSE`](./LICENSE). Chaque fichier de code le dit dans son en-tête.
 
+**Sauf les photos** : les planches et la grille de `docs/figures/` et l'image d'aperçu sont © Thomas Hammoudi, tous droits réservés, hors de la licence CC BY-NC 4.0. Les captures d'écran de la documentation (`docs/figures/documentation-v1/`) restent sous CC BY-NC 4.0, comme le code, les textes et les analyses.
+
 **En clair** : vous pouvez utiliser, partager, modifier et redistribuer les presets et le générateur **librement pour un usage non commercial**, à condition de **créditer les auteurs** (attribution par préfixe, voir [Contribuer](docs/contribuer.md)). Tout usage commercial (revente du pack, intégration dans un produit payant, etc.) est **interdit** sans accord explicite. Le code de `outils/x-t4/` suit la même règle.
 
 Les **recettes de presets** (valeurs de paramètres) sont des réglages publiés par leurs auteurs respectifs (voir [Contribuer](docs/contribuer.md)). Elles ont été compilées depuis des sources publiques (FujiXWeekly, blogs, Discord francophone Team Fuji). Si vous êtes l'auteur d'un preset et souhaitez un retrait ou une correction d'attribution, ouvrir une issue.
