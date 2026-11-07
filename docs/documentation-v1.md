@@ -2,7 +2,7 @@
 
 Cette page regroupe ce qu'il faut savoir pour importer et échanger des presets Fujifilm (fichiers `.FP1`) : où les trouver, comment les adapter à votre boîtier, et les outils de la communauté. Elle reprend la documentation que je tenais sur Notion depuis 2022.
 
-Pour les nouveautés de 2026, voir [la page des presets](https://thomashammoudi.com/presets-fujifilm/), le [README](../README.md) et [le traitement couleur du X-T4](traitement-couleur-x-t4.md).
+Pour les nouveautés de 2026, voir [la fiche des presets](https://dev.thomashammoudi.com/projets/presets-fuji/), le [README](../README.md) et [le traitement couleur du X-T4](traitement-couleur-x-t4.md).
 
 ## Sommaire
 
@@ -72,7 +72,7 @@ Le même chemin, en dessin :
 
 ## Téléchargements
 
-- Les presets et le tableur : [la page des presets](https://thomashammoudi.com/presets-fujifilm/) ou [ce dépôt](../README.md).
+- Les presets et le tableur : [la fiche des presets](https://dev.thomashammoudi.com/projets/presets-fuji/) ou [ce dépôt](../README.md).
 - Les bases Notion montrées dans la vidéo restent sur [l'ancienne page Notion](https://thomashammoudi.notion.site/Documentation-preset-Fujifilm-a68e0d6ce170416987ad458475cca9ec).
 
 ## Procédure pour les autres appareils
