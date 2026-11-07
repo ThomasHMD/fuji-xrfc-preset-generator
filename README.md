@@ -42,7 +42,7 @@ Sur un X-T4 avec un Mac, vous pouvez aussi écrire une recette directement dans 
 | [La documentation de la v1](docs/documentation-v1.md) | la doc de 2022 : conversion à la main, outils de la communauté |
 | [Contribuer](docs/contribuer.md) | les auteurs des presets, les pistes d'évolution |
 
-La page [Presets Fujifilm](https://thomashammoudi.com/presets-fujifilm/) du blog présente aussi le pack, avec des exemples. Pour aller plus loin : [FujiXWeekly](https://fujixweekly.com/), source de la plupart des presets `RR`, [le blog d'Henri-Pierre Chavaz](https://hpchavaz-photography.blogspot.com/p/fujifims.html), et [retro-ingenierie-boitiers](https://github.com/ThomasHMD/retro-ingenierie-boitiers), la même méthode de mesure sur des Nikon et un Pentax.
+La fiche [Presets Fujifilm](https://dev.thomashammoudi.com/projets/presets-fuji/) raconte comment le pack est fait, avec le lien vers les exemples. Pour aller plus loin : [FujiXWeekly](https://fujixweekly.com/), source de la plupart des presets `RR`, [le blog d'Henri-Pierre Chavaz](https://hpchavaz-photography.blogspot.com/p/fujifims.html), et [retro-ingenierie-boitiers](https://github.com/ThomasHMD/retro-ingenierie-boitiers), la même méthode de mesure sur des Nikon et un Pentax.
 
 ## Le dépôt
 
