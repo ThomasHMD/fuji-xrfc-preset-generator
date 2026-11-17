@@ -82,7 +82,7 @@ Voir [Écrire une recette dans C1 à C7](ecrire-dans-c1-c7.md).
 
 ## Adapter à un autre boîtier
 
-Tout est déjà décliné dans le [pack lite ou complet](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest), un dossier par boîtier : X-T2, X-T3, X-T5, X-T20, X-T30, X-H1, X-S10, X-E3, X-Pro2, X-Pro3, X100F, X100V, GFX 50R, GFX 50S et GFX 100. Je n'ai testé que le X-T4.
+Tout est déjà décliné dans le [pack lite ou complet](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest), un dossier par boîtier : X-T2, X-T3, X-T5, X-T20, X-T30, X-T50, X-H1, X-S10, X-E3, X-Pro2, X-Pro3, X100F, X100V, GFX 50R, GFX 50S et GFX 100. Je n'ai testé que le X-T4.
 
 Les `.FP1` de [`presets/`](../presets/) sont générés pour **X-T4**. Pour un autre modèle, modifier trois attributs dans la macro (lignes `"        <PropertyGroup device="…"`  et `TetherRAWConditonCode`) :
 
@@ -94,6 +94,7 @@ Les `.FP1` de [`presets/`](../presets/) sont générés pour **X-T4**. Pour un a
 | X-T5 | `X-T5` | `X-T5_0200` |
 | X-T20 | `X-T20` | `X-T20_0100` |
 | X-T30 | `X-T30` | `X-T30_0100` |
+| X-T50 | `X-T50` | `X-T50_0100` |
 | X-H1 | `X-H1` | `X-H1_0100` |
 | X-S10 | `X-S10` | `X-S10_0100` |
 | X-E3 | `X-E3` | `X-E3_0100` |
@@ -105,6 +106,8 @@ Les `.FP1` de [`presets/`](../presets/) sont générés pour **X-T4**. Pour un a
 | GFX 50R | `GFX 50R` | `GFX 50R_0100` |
 | GFX 50S | `GFX 50S` | `GFX 50S_0100` |
 | GFX 100 | `GFX 100` | `GFX 100_0100` |
+
+Sur le X-T5 et le X-T50, l'`<IOPCode>` change aussi : `FA179502` pour le X-T5, qui demande en plus une ligne `<PortraitEnhancer/>` après `<DigitalTeleConv>`, et `FF189504` pour le X-T50. Ces deux codes ont été relevés dans de vrais fichiers de ces boîtiers ; les packs les appliquent déjà. Le X-T50 a été ajouté grâce aux fichiers convertis par Didier C.
 
 Le **numéro de série** (`<SerialNumber>`) n'a **pas** besoin d'être changé : XRFC ne le contrôle pas lors du chargement (vérifié par la communauté).
 

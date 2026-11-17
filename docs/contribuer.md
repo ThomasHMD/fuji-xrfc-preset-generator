@@ -7,7 +7,7 @@
 * **Exposer les champs figés** (Clarity, ColorSpace, BlackImageTone…) pour couvrir les presets B&W virés et les presets AdobeRGB.
 * **Validateur `.FP1`** : pour le X-T4, `xt4_recettes traduire` et `autotest` en tiennent lieu ; un validateur pour tous les boîtiers (JSON Schema, Pydantic) reste à faire.
 * **UI web** (Streamlit / SvelteKit) pour saisir un preset via formulaire avec preview.
-* **Boîtiers récents** : X-H2, X-S20, X-T50 et X100VI manquent aux packs, faute d'un vrai fichier `.FP1` pour ces modèles. Un fichier généré par X RAW Studio suffit pour les ajouter.
+* **Boîtiers récents** : X-H2, X-S20 et X100VI manquent aux packs, faute d'un vrai fichier `.FP1` pour ces modèles. Un fichier généré par X RAW Studio suffit pour les ajouter. C'est ainsi que le X-T50 est entré dans les packs en novembre 2026, grâce à Didier C.
 * **Simulations hors X RAW Studio** : [abpy/FujifilmCameraProfiles](https://github.com/abpy/FujifilmCameraProfiles) publie les simulations Fuji en profils `.dcp` et LUT `.cube` pour Lightroom / Camera Raw. Base possible pour décliner les recettes du tableur en presets Lightroom, sans boîtier branché.
 
 Un membre du Discord a aussi publié [`FujiSimuRecipesGen`](https://github.com/mmoqui/FujiSimuRecipesGen), un générateur en Go (MIT).

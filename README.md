@@ -11,9 +11,9 @@ Des presets pour les boîtiers Fujifilm, à utiliser dans X RAW Studio ou, sur u
 | Pack | Ce qu'il contient | Poids |
 |---|---|---|
 | **[Pack V2 lite](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest/download/presets-v2-lite.zip)** | mes 7 profils et les 14 recettes mesurées, pour chaque boîtier | 0,3 Mo |
-| **[Pack V2 complet](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest/download/presets-v2-complet.zip)** | le pack lite, les 161 recettes de 2022, le tableur et toute la documentation en PDF | 10,7 Mo |
+| **[Pack V2 complet](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest/download/presets-v2-complet.zip)** | le pack lite, les 161 recettes de 2022, le tableur et toute la documentation en PDF | 10,8 Mo |
 
-Boîtiers : X-T2, X-T3, X-T4, X-T5, X-T20, X-T30, X-H1, X-S10, X-E3, X-Pro2, X-Pro3, X100F, X100V, GFX 50R, GFX 50S et GFX 100. Je n'ai testé que le X-T4.
+Boîtiers : X-T2, X-T3, X-T4, X-T5, X-T20, X-T30, X-T50, X-H1, X-S10, X-E3, X-Pro2, X-Pro3, X100F, X100V, GFX 50R, GFX 50S et GFX 100. Je n'ai testé que le X-T4.
 
 Le [tableur seul](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases/latest/download/DemoPresetV1.1.xlsm) sert à générer vos propres presets. Toutes les versions sont dans les [Releases](https://github.com/ThomasHMD/fuji-xrfc-preset-generator/releases).
 
@@ -62,6 +62,7 @@ Les fichiers pour les autres boîtiers sont dans les packs.
 - **V1.1** : le correctif de la balance des blancs en Kelvin.
 - **Avril 2026** : le projet arrive sur GitHub.
 - **Octobre 2026, V2** : les recettes sont mesurées sur le boîtier, un outil pour Mac les écrit dans C1 à C7, et tout est converti pour les autres boîtiers.
+- **Novembre 2026, V2.1** : le X-T50 rejoint les packs, d'après les fichiers convertis par Didier C. sur un vrai profil X-T50.
 
 ## Crédits
 
